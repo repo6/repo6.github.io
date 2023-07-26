@@ -1,4 +1,6 @@
 User-agent: *
-Disallow: /about
 Allow: /
+Disallow: /about/
+Disallow: /images/*
+
 Sitemap: https://repo6.github.io/sitemaps/sitemap.xml
