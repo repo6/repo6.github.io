@@ -166,15 +166,15 @@ $("#enRoleBtn").click(enRuleAct);
 $("#krRoleBtn").click(krRuleAct);
 
 function enRuleAct(){
-	$("#enRole").show();
-	$("#krRole").hide();
+	$("#enRole").hide();
+	$("#krRole").show();
 	$("#enRoleBtn").addClass("rulesLanActive");
 	$("#krRoleBtn").removeClass("rulesLanActive");
 }
 
 function krRuleAct(){
-	$("#enRole").hide();
-	$("#krRole").show();
+	$("#enRole").show();
+	$("#krRole").hide();
 	$("#enRoleBtn").removeClass("rulesLanActive");
 	$("#krRoleBtn").addClass("rulesLanActive");
 }
