@@ -1,0 +1,68 @@
+body {
+	 align-items: center;
+	 background: #fff;
+	 display: flex;
+	 height: 70px;
+	 justify-content: center;
+}
+ @keyframes scroll {
+	 0% {
+		 transform: translateX(0);
+	}
+	 100% {
+		 /*transform: translateX(calc(-250px * 7));*/
+		 transform: translateX(calc(-70px * 7));
+	}
+}
+ .slider {
+	 background: white;
+	 box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+	 height: 70px;
+	 margin: auto;
+	 overflow: hidden;
+	 position: relative;
+	 width: 100%;
+}
+ .slider::before, .slider::after {
+	 background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+	 content: "";
+	 height: 70px;
+	 position: absolute;
+	 width: 20px;
+	 z-index: 2;
+}
+ .slider::after {
+	 right: 0;
+	 top: 0;
+	 transform: rotateZ(180deg);
+}
+ .slider::before {
+	 left: 0;
+	 top: 0;
+}
+ .slider .slide-track {
+	 animation: scroll 40s linear infinite;
+	 display: flex;
+	 /*width: calc(125px * 28);*/ /* 3000 */
+	 width: calc(70px * 14);
+}
+ .slider .slide {
+	 height: 70px;
+	 /*width: 125px;*/
+	 width: 70px;
+}
+
+.cell{
+	background-color: #fff;
+	height: 70px;
+	width: 70px;
+}
+
+.market{
+	position: absolute;
+	width: 15px;
+}
+
+.product{
+	height: 70px;
+}
